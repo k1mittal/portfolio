@@ -21,7 +21,7 @@ nav {
   border-bottom-color: oklch(80% 3% 200);
 }
 
-a {
+nav a {
   flex: 1;
   text-decoration: none;
   color: inherit;
@@ -29,11 +29,55 @@ a {
   padding: 0.5em;
 }
 
-a:hover{
+nav a:hover{
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
   background-color: oklch(from var(--color-accent) 95% 5% h);
+}
+
+input {
+  font: inherit;
+}
+
+textarea {
+  font: inherit;
+}
+
+label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+button {
+  font: inherit;
+  display: grid;
+  grid-column: 1 / -1;
+}
+
+form{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em; 
+}
+
+article {
+  grid-template-rows: subgrid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h2 {
+  margin: 0;
 }
 
 .current {
@@ -42,3 +86,70 @@ a:hover{
   border-bottom-color: oklch(80% 3% 200);
   font-weight: bold;
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  grid-row: span 3;
+  gap: 1em;
+}
+
+.resume-header {
+  text-align: center;
+}
+
+.resume-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.resume-main {
+  line-height: 1.6;
+}
+
+.resume-contact{
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.resume-section {
+  margin-bottom: 0.75rem;
+}
+
+.resume-section-title {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0rem;
+  color: #333;
+}
+
+.resume-entry {
+  margin-bottom: 0rem;
+}
+
+.resume-entry-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-entry-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: .75rem;
+  margin-bottom: 0.1rem;
+}
+
+.resume-entry-info,
+.resume-entry-dates {
+  font-style: italic;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.resume-bullets {
+  padding-left: 1.25rem;
+  margin: 0px;
+}
+
