@@ -35,3 +35,45 @@ for (let p of pages) {
     nav.append(a);
 }
 
+document.body.insertAdjacentHTML(
+    'afterbegin',
+    `
+      <label class="color-scheme">
+          Theme:
+          <select>
+              <option value="light dark">Automatic</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+          </select>
+      </label>`,
+);
+
+const select = document.querySelector('select');
+
+if ("colorScheme" in localStorage) {
+    const savedScheme = localStorage.colorScheme;
+    document.documentElement.style.setProperty('color-scheme', savedScheme);
+    select.value = savedScheme; // update dropdown to match
+}
+
+
+select.addEventListener('input', function (event) {
+    const value = event.target.value;
+    console.log('color scheme changed to', event.target.value);
+    document.documentElement.style.setProperty('color-scheme', value);
+    localStorage.colorScheme = value;
+});
+
+const form = document.querySelector('form');
+
+form?.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const data = new FormData(form);
+    let params = [];
+    for (let [name, value] of data) {
+        console.log(name, value); 
+        params.push(`${name}=${encodeURIComponent(value)}`); 
+    }
+    const url = `${form.action}?${params.join("&")}`;
+    location.href = url;
+});

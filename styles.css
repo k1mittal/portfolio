@@ -1,6 +1,7 @@
 html {
   --color-accent: oklch(70% 0.19 190);
   accent-color: var(--color-accent); 
+  color-scheme: light dark;
 }
 
 body {
@@ -14,11 +15,12 @@ body {
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: 20px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
 }
 
 nav a {
@@ -33,7 +35,7 @@ nav a:hover{
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 input {
@@ -83,7 +85,7 @@ h2 {
 .current {
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
   font-weight: bold;
 }
 
@@ -121,7 +123,6 @@ h2 {
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.25rem;
   margin-bottom: 0rem;
-  color: #333;
 }
 
 .resume-entry {
@@ -153,3 +154,18 @@ h2 {
   margin: 0px;
 }
 
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 80%;
+  font-family: inherit;
+}
+
+.color-scheme select {
+  font-size: 80%;
+  font-family: inherit;
+}
