@@ -1,6 +1,6 @@
 html {
   --color-accent: oklch(70% 0.19 190);
-  accent-color: var(--color-accent); 
+  accent-color: var(--color-accent);
   color-scheme: light dark;
 }
 
@@ -31,7 +31,7 @@ nav a {
   padding: 0.5em;
 }
 
-nav a:hover{
+nav a:hover {
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
@@ -58,20 +58,24 @@ button {
   grid-column: 1 / -1;
 }
 
-form{
+form {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 1em; 
+  gap: 1em;
 }
 
 article {
   grid-template-rows: subgrid;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.1;
   text-wrap: balance;
-
 }
 
 h1 {
@@ -109,7 +113,7 @@ h2 {
   line-height: 1.6;
 }
 
-.resume-contact{
+.resume-contact {
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
@@ -129,7 +133,7 @@ h2 {
   margin-bottom: 0rem;
 }
 
-.resume-entry-div{
+.resume-entry-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,7 +142,7 @@ h2 {
 .resume-entry-title {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: .75rem;
+  margin-top: 0.75rem;
   margin-bottom: 0.1rem;
 }
 
