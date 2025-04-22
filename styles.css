@@ -82,7 +82,24 @@ h1 {
   font-size: 400%;
 }
 
-h2 {
+dl {
+  display: grid;
+  gap: 0.5rem;
+}
+
+dt {
+  grid-row: 1;
+  font-weight: bold;
+  font-weight: 500;           /* Slightly lighter than bold */
+  text-transform: uppercase;  /* Optional: makes it feel like a label */
+  letter-spacing: 0.5px; 
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+}
+
+dd {
+  grid-row: 2;
   margin: 0;
 }
 

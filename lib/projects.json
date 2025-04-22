@@ -1,0 +1,74 @@
+[
+    {
+        "title": "SALK: Planned",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Planned"
+    },
+    {
+        "title": "COSMOS @ UCI",
+        "year": "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Predicted Alzheimer's Disease in people with a large dataset of bio-data"
+    },
+    {
+        "title": "Project",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Planned Project"
+    },
+    {
+        "title": "California High School Robotics",
+        "year": "2019",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a State Participating Robot for the VEX 2019-2020 Season. Won Various Awards"
+    },
+    {
+        "title": "California High School Robotics",
+        "year": "2020",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created an award winning  Robot for the VEX 2020-2021 Season"
+    },
+    {
+        "title": "California High School Robotics",
+        "year": "2021",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a State Participating Robot for the VEX 2021-2022 Season. Won Various Awards"
+    },
+    {
+        "title": "California High School Robotics",
+        "year": "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a State Participating Robot for the VEX 2022-2023 Season. Won Various Awards"
+    },
+    {
+        "title": "Inspirit AI - Self Driving Cars",
+        "year": "2021",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Used Behavior Cloning, Deep Q-Networks, and various other machine learning techniques in order to simulate 2D simple cars in different environments. It had great accuracy and drove really well"
+    },
+    {
+        "title": "Inspirit AI - Anti-Refugee Sentiment Analysis",
+        "year": "2021",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Analyzed Twitter data to determine whether the tweets were anti or pro-refugee comments. Used NLP and different algorithms (Vectorizers and Data Preprocessing methods) and models (MLP and Logistic Regression) in order to determine the findings with 90% accuracy"
+    },
+    {
+        "title": "Coursera - Crime in San Francisco",
+        "year": "2020",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "In this project, used crime data in San Francisco and determined where the most crime was located and what type of crime it was. It gave valuable information showing how to protect the people in San Francisco"
+    },
+    {
+        "title": "DSC 106 - Project 01",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a neat visualization describing nutritional differences between different types of processed foods"
+    },
+    {
+        "title": "DSC 106 - Project 02",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created deceptive visualizations to support and argue against a proposition. Showed how visualizations can be deceptive"
+    }
+]
