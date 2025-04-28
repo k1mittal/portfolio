@@ -90,9 +90,9 @@ dl {
 dt {
   grid-row: 1;
   font-weight: bold;
-  font-weight: 500;           /* Slightly lighter than bold */
-  text-transform: uppercase;  /* Optional: makes it feel like a label */
-  letter-spacing: 0.5px; 
+  font-weight: 500; /* Slightly lighter than bold */
+  text-transform: uppercase; /* Optional: makes it feel like a label */
+  letter-spacing: 0.5px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--border-color);
@@ -126,12 +126,11 @@ path {
   }
 }
 
-
 .notSelected {
   opacity: 0.5;
 }
 
-.notSelected:hover{
+.notSelected:hover {
   opacity: 1;
 }
 
@@ -223,7 +222,7 @@ path {
   font-family: inherit;
 }
 
-.swatch{
+.swatch {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -236,10 +235,10 @@ path {
   display: grid;
   flex: 1;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
-  gap: 1em; 
-  border: 1px solid #ccc; 
+  gap: 1em;
+  border: 1px solid #ccc;
   padding: 1em;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .legendList {
@@ -256,6 +255,5 @@ path {
 
 .searchBar {
   width: 100%;
-  padding: .5em;
+  padding: 0.5em;
 }
-
