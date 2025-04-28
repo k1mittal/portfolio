@@ -103,6 +103,38 @@ dd {
   margin: 0;
 }
 
+#projects-pie-plot {
+  display: flex;
+  max-width: 20em;
+  margin-block: 2em;
+}
+
+#projects-pie-plot:hover path:not(:hover):not(.selected) {
+  opacity: 0.5;
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: var(--color-accent) !important;
+  opacity: 1;
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+
+.notSelected {
+  opacity: 0.5;
+}
+
+.notSelected:hover{
+  opacity: 1;
+}
+
 .current {
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
@@ -190,3 +222,40 @@ dd {
   font-size: 80%;
   font-family: inherit;
 }
+
+.swatch{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+.legend {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em; 
+  border: 1px solid #ccc; 
+  padding: 1em;
+  border-radius: 8px; 
+}
+
+.legendList {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.searchBar {
+  width: 100%;
+  padding: .5em;
+}
+
