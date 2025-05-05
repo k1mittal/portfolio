@@ -89,7 +89,7 @@ dl {
 
 dt {
   grid-row: 1;
-  font-weight: bold;
+  font-size: 14px;
   font-weight: 500; /* Slightly lighter than bold */
   text-transform: uppercase; /* Optional: makes it feel like a label */
   letter-spacing: 0.5px;
@@ -103,6 +103,48 @@ dd {
   margin: 0;
 }
 
+dl.info {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 0.25em 1em;
+  margin: 0;
+  padding: 1em;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+dl.info dt {
+  margin: 0;
+}
+
+dl.info dd {
+  margin: 0;
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
 #projects-pie-plot {
   display: flex;
   max-width: 20em;
@@ -113,9 +155,38 @@ dd {
   opacity: 0.5;
 }
 
-path {
-  transition: 300ms;
-  cursor: pointer;
+#stats {
+  display: flex;
+  width: 100%;
+}
+
+#chart {
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+.tooltip {
+  color: black;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  padding: 1em;
 }
 
 .selected {
@@ -256,4 +327,9 @@ path {
 .searchBar {
   width: 100%;
   padding: 0.5em;
+}
+
+.gridlines {
+  stroke: var(--border-color);
+  stroke-width: 0.1px;
 }
