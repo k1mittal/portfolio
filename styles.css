@@ -333,3 +333,7 @@ circle.selected {
   stroke: var(--border-color);
   stroke-width: 0.1px;
 }
+
+.projecta {
+  text-decoration: none;
+}

@@ -70,5 +70,12 @@
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Created deceptive visualizations to support and argue against a proposition. Showed how visualizations can be deceptive"
+  },
+  {
+    "title": "DSC 106 - Lab 07",
+    "year": "2025",
+    "image": "../images/lab07.png",
+    "description": "DSC 106 Lab - Bike usage in Boston 2022",
+    "url": "https://k1mittal.github.io/project_bike/"
   }
 ]
