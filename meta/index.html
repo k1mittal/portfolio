@@ -11,6 +11,20 @@
     <script type="module" src="main.js"></script>
     <h1>Meta Page</h1>
     <h2>Commits by time of day</h2>
+    <div id="scaler">
+      <label>
+        Show commits until:
+        <input
+          type="range"
+          id="scale-commit-progress"
+          min="0"
+          max="100"
+          value="100"
+        />
+        <time id="scale-commit-time"></time>
+      </label>
+    </div>
+    <dl id="files"></dl>
     <div id="chart"></div>
     <dl id="commit-tooltip" class="info tooltip" hidden>
       <dt>Commit</dt>

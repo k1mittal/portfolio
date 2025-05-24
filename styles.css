@@ -99,8 +99,14 @@ dt {
 }
 
 dd {
-  grid-row: 2;
-  margin: 0;
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
 }
 
 dl.info {
@@ -135,6 +141,9 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -167,6 +176,48 @@ circle.selected {
   to {
     stroke-dashoffset: -8; /* 5 + 3 */
   }
+}
+
+#scaler {
+  flex: 1;
+  align-items: baseline;
+}
+
+#scale-commit-time {
+  margin-left: auto;
+}
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+  }
+
+  dt small {
+    display: block;
+    font-size: 0.75em;
+    opacity: 0.6;
+  }
+
+  dd {
+    grid-column: 2;
+  }
+}
+
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);
+  border-radius: 50%;
 }
 
 .selection {
